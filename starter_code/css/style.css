@@ -3,10 +3,14 @@
     margin: 0px;
     border: 0px;
 }
-body {
-    background-color: rgb(188, 234, 255);
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+html {
+background: #2980B9;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
 
 header {
     background-color: rgb(255, 255, 228);
@@ -14,25 +18,24 @@ header {
     padding: 2rem 5rem;
 }
 
-ul {
+header ul {
     list-style: none;
     margin-left: 3vw;
 }
 
-li {
+header li {
     display: inline-block;
     padding-left: 5vw;
     
 }
 
-a {
+header a {
     text-decoration: none;
 }
 
 main {
     display: flex;
     flex: auto;
-    background-color: red;
 }
 
 .main__info {
@@ -43,6 +46,21 @@ main {
     padding: 2rem 5rem;
 }
 
-.main__img {
-    background-color: green;
+.main__info-logos  {
+    border: 5px solid red;
+    width: 40%;
 }
+
+.main__info-logos img {
+    width: 100%;
+}
+
+.main__perfil {
+    width: 20%;
+}
+
+.main__perfil img {
+    width: 100%;
+}
+
+
