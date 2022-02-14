@@ -7,38 +7,106 @@
     <title>Mi CV</title>
     <link rel="stylesheet" href="./css/style.css">
 
+    <!-- <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Media Queries</title>
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./tablet.css" media="screen and (min-width: 600px)">
+        <link rel="stylesheet" href="./desktop.css" media="screen and (min-width: 800px)">
+    
+    
+    </head> -->
+
+
 </head>
 <body>
-    <header>
+    <header class="header-container">
         <section  class="header__logo" >
-            <div>LOGO</div>
+            <div class=".div-logo">LOGO</div>
         </section>
         <section class="header__ul">
             <ul >
                 <li class="header__li" ><a href="">HOLA</a></li>
-                <li class="header__li" ><a href="">PROYECTOS</a></li>
-                <li class="header__li" ><a href="">HABLEMOS</a></li>
+                <li class="header__li" ><a class="header__li--white" href="">PROYECTOS</a></li>
+                <li class="header__li" ><a class="header__li--white" href="">HABLEMOS</a></li>
             </ul>
         </section>
     </header>
-    <main>
-        <section class="main__info">
-            <h3>¡Hola a todos!</h3>
-            <h1>Soy Leo</h1>
-            <span>Frontedn Developer que le encanta implementar diseños que inspiran a las personas</span>
-            <figure class="main__info-logos">
-                <img src="./src/img/phone.png" alt="">
-                <img src="./src/img/email.png" alt="">
-                <img src="./src/img/in.png" alt="" >
-                <img src="./src/img/github-icon.png" alt="">
+    <main class="main-container">
+        <section class="main-container-info">
+                <section class="main__info">
+                    <h3>¡Hola a todos!</h3>
+                    <h1>Soy Leobardo Pineda</h1>
+                    <span class="main-info__message">Frontedn Developer que le encanta implementar diseños que inspiran a las personas</span>
+                    <figure class="main__info-logos">
+                        <img src="./src/img/phone.png" alt="">
+                        <img src="./src/img/email.png" alt="">
+                        <img src="./src/img/in.png" alt="" >
+                        <img src="./src/img/github-icon.png" alt="">
+                    </figure>
+                    <section>
+                        <button><a href="">DESCARGAR CURRÍCULUM</a></button>
+                    </section>
+                </section>
 
-            </figure>
+                <section class="main__perfil">
+                    <figure class="main__perfil-foto">
+                        <img src="./src/img___yo/fotoPerfil.jpg" alt="Yo mero">
+                    </figure>
+                </section>
         </section>
-        <section class="main__perfil">
-            <figure class="main__perfil-foto">
-                <img src="./src/img___yo/fotoPerfil.jpg" alt="Yo mero">
-            </figure>
+
+        <section class="main-introduccion-proyectos">
+            <article class="main-introduccion-proyectos__article">
+                <span class="main-introduccion-proyectos__text">Participé en @GeneratioMx y realicé proyectos como a 
+                    continuación veremos.</span>
+                    <h3 class="main-introduccion-proyectos__message">Aquí hay algunos que me gustaría compartir.</h3>
+                    <picture>
+                        <img src="./src/img/arrow-down.svg" alt="arrow down">
+                    </picture>
+            </article>
         </section>
+        
+        <section class="first-project"> 
+            <section class="first-project__info">
+                <button class="first-project__button-mi-proyecto"><a href="">mi_proyecto.com</a></button>
+                <span>Accede a más de 120 proyectos que te ayudarán a 
+                    mejorar tus habilidades como desarrollador Front-End.</span>
+                    <div>
+                        <button>
+                            <a href="">VER PROYECTO</a>
+                        </button>
+                        <button class="first-project__button-mi-proyecto--transparent">
+                            <a  href="">VER CODIGO</a>
+                        </button>
+                    </div>
+            </section>
+            <section class="first-project__img">
+                <img src="./src/img/laptop.png" alt="laptop placeholder">
+            </section>
+        </section>
+
+        <section class="first-project-message">
+            <picture class="first-project-message__img-container">
+                <img class="first-project-message__img" src="./src/img/persona1.png" alt="imagen de la persona que lo dijo">
+            </picture>
+            
+            <article class="first-project-message__quote">
+                <span>La verdad yo era bien chido, pero el Leo no hay palabras para describirlo, chance y un día de estos puedo ser como él. </span>
+            </article>
+            <span class="first-project-message__author">Albert Einstein</span>
+        </section>
+
+
+
+
+        <section class="ultima-section">
+            nada que ver aqui
+        </section>
+
     </main>
 </body>
 </html>
